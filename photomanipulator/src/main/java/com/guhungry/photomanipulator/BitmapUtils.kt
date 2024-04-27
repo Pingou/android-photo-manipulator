@@ -186,7 +186,7 @@ object BitmapUtils {
         val canvas = factory.makeCanvas(background)
 
         val paint = factory.makePaint().apply {
-            xfermode = PorterDuffXfermode(PorterDuff.Mode.SRC_OVER)
+            xfermode = PorterDuffXfermode(PorterDuff.Mode.SRC)
         }
         canvas.drawBitmap(overlay, position.x, position.y, paint)
     }
