@@ -42,4 +42,4 @@ def getExtOrDefault(name) {
     return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties[name]
 }
 
-apply from: "${rootDir}/gradle/publish-root.gradle"
+//apply from: "${rootDir}/gradle/publish-root.gradle"
