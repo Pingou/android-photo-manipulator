@@ -131,3 +131,4 @@ ext {
 apply from: "${rootDir}/gradle/jacoco.gradle"
 apply from: "${rootDir}/gradle/publish-module.gradle"
 apply plugin: 'org.sonarqube'
+
