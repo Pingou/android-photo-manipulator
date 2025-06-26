@@ -62,12 +62,12 @@ android {
             excludes += ['META-INF/LICENSE.md', 'META-INF/LICENSE-notice.md']
         }
     }
-    publishing {
-        singleVariant("release") {
-            withSourcesJar()
-            withJavadocJar()
-        }
-    }
+    //publishing {
+    //    singleVariant("release") {
+    //        withSourcesJar()
+    //        withJavadocJar()
+    //    }
+    //}
     testOptions {
         animationsDisabled true
 
@@ -128,7 +128,7 @@ ext {
     allLicenses = ["MIT"]
 }
 
-apply from: "${rootDir}/gradle/jacoco.gradle"
-apply from: "${rootDir}/gradle/publish-module.gradle"
-apply plugin: 'org.sonarqube'
+//apply from: "${rootDir}/gradle/jacoco.gradle"
+//apply from: "${rootDir}/gradle/publish-module.gradle"
+//apply plugin: 'org.sonarqube'
 
